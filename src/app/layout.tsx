@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <html lang='en' suppressHydrationWarning className='px-16 py-8'>
+      <html lang='en' suppressHydrationWarning className='px-4 lg:px-16 '>
         <body className={inter.className}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <Providers>
