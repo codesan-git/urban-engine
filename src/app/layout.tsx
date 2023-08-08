@@ -1,6 +1,8 @@
 import { Providers } from '@/components/client/Providers/Providers.client';
+import { ThemeProvider } from "@/components/theme-provider"
 import './globals.css';
 import { Inter } from 'next/font/google';
+import Navbar from '@/components/navbar/Navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -11,14 +13,17 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en'>
-      <body className={inter.className}>
-        <main className='flex min-h-screen flex-col px-8 py-16'>
-          <div>
-            <Providers>{children}</Providers>
-          </div>
-        </main>
-      </body>
-    </html>
+    <>
+      <html lang='en' suppressHydrationWarning className='px-16 py-8'>
+        <body className={inter.className}>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <Providers>
+              <Navbar />
+              {children}
+            </Providers>
+          </ThemeProvider>
+        </body>
+      </html>
+    </>
   );
 }
