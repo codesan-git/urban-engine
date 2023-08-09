@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/NavigationMenu"
 
 import { FC } from 'react'
-import { Button } from "@/components/ui/Button"
+import { Button } from "../ui/Button"
 import Link from "next/link"
 
 interface MenuNavbarProps {

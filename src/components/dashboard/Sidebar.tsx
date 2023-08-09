@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/Button"
+import { Button } from "../ui/Button"
 import { ScrollArea } from "@/components/ui/ScrollArea"
 
 import { Playlist } from "@/data/playlists"

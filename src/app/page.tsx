@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Image from "next/image"
 import { PlusCircledIcon } from "@radix-ui/react-icons"
 
-import { Button } from "@/components/ui/Button"
+import { Button } from "../components/ui/Button"
 import { ScrollArea, ScrollBar } from "@/components/ui/ScrollArea"
 import { Separator } from "@/components/ui/Separator"
 import {
