@@ -25,7 +25,7 @@ const AvatarNavbar: FC<AvatarNavbarProps> = ({ }) => {
         <DropdownMenu>
             <DropdownMenuTrigger>
                 <Avatar>
-                    <AvatarImage src="https://github.com/satrianugraha-git.png" />
+                    <AvatarImage src="https://github.com/codesan-git.png" />
                     <AvatarFallback>AV</AvatarFallback>
                 </Avatar>
             </DropdownMenuTrigger>
