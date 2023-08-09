@@ -21,7 +21,7 @@ const Navbar: FC<NavbarProps> = ({ }) => {
         </div>
         <div className='flex gap-4 my-auto'>
           <div>
-            <ModeToggle />
+            {/* <ModeToggle /> */}
           </div>
           <div className='hidden lg:block'>
             <WriteNavbar />
